@@ -5,7 +5,7 @@ Stats & Compare
 Presentation
 ============
 
-:version: 1.0
+:version: 0.1
 :Author: Antoine MARTIN
 :Contact: antoine.martin222@gmail.com
 
