@@ -11,7 +11,6 @@ Presentation
 
 This tool permit to compare paramaters from 2 CSV files or make some stats with one CSV file
 
-
 The following libraries must be install on your computer :
 
 - matplotlib

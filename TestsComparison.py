@@ -23,7 +23,8 @@ def main(args):
     CSV Comparison - MAIN
     """
     cfg = read_cfg(args[0])
-    titles = [cfg.get('Titles', 'File1'), cfg.get('Titles', 'File2')]
+    titles = [cfg.get('Histogram', 'File1'), cfg.get('Histogram', 'File2')]
+    label = cfg.get('Histogram', 'Label')
     print "Reading data..."
     datas_f1_test = pandas.read_csv(args[1], delimiter=',', engine='c')
     if args[2] is None:
@@ -31,7 +32,7 @@ def main(args):
     else:
         datas_f2_test = pandas.read_csv(args[2], delimiter=',', engine='c')
     datas_f1_f2 = [datas_f1_test, datas_f2_test]
-    histogram = Histogram(datas_f1_f2, args, titles)
+    histogram = Histogram(datas_f1_f2, args, titles, label)
     for test in datas_f1_test.columns.values:
         print test
         histogram.get_hitogram(test)

@@ -19,11 +19,12 @@ class Histogram(object):
     Histogram class
     '''
 
-    def __init__(self, datas_f1_f2, args, titles):
+    def __init__(self, datas_f1_f2, args, titles, label):
         self.datas_f1_test = datas_f1_f2[0]
         self.datas_f2_test = datas_f1_f2[1]
         self.test = None
         self.titles = titles
+        self.label = label
         self.one_curve = False
         if type(self.datas_f1_test) != type(self.datas_f2_test):
             self.datas_f2_test = self.datas_f1_test
@@ -58,7 +59,7 @@ class Histogram(object):
                 bins = numpy.linspace(0, maxi, 100)
             histo_f1 = numpy.histogram(f1_data, bins)
             histo_f2 = numpy.histogram(f2_data, bins)
-            label = "Y axe name"
+            label = self.label
             width = abs(histo_f1[1][1] - histo_f1[1][0])
             if width == 0.0:
                 width = 0.05
