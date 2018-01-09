@@ -18,17 +18,17 @@ The following libraries must be install on your computer :
 
 Arguments :
 
-- [-h] (optional) display help and exit
+- **[-h]** *(optional)* display help and exit
 
-- [-c CONFIGFILE] (required) is to specify the path of the configuration file. If not specified, the default configuration file path is "./TestsComparison.cfg".
+- **[-c CONFIGFILE]** *(required)* is to specify the path of the configuration file. If not specified, the default configuration file path is "./TestsComparison.cfg".
 
-- [-f1 CSV_FILE_1] (required) define the path of the first csv file. If not specified, the default value is "file1.csv".
+- **[-f1 CSV_FILE_1]** *(required)* define the path of the first csv file. If not specified, the default value is "file1.csv".
 
-- [-f2 CSV_FILE_2] (optional) define the path of the second csv file. If not specified, the default value is "None".
+- **[-f2 CSV_FILE_2]** *(optional)* define the path of the second csv file. If not specified, the default value is "None".
 
-- [-s] (optional) permit to save the graphs in a "Results" folder.
+- **[-s]** *(optional)* permit to save the graphs in a "Results" folder.
 
-- [-n] (optional) permit to normalize the histogram.
+- **[-n]** *(optional)* permit to normalize the histogram.
 
-- [-b] (optional) don't display the graphs.
+- **[-b]** *(optional)* don't display the graphs.
 
