@@ -1,3 +1,6 @@
 *.pyc
 Results/*
 .*~
+
+# Pycharm
+.idea
