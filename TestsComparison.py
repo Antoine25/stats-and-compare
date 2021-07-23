@@ -13,8 +13,8 @@ try:
     from src.histogram import Histogram
     import pandas
 except ImportError as error:
-    print "Import Error"
-    print error
+    print("Import Error")
+    print(error)
     exit()
 
 
@@ -25,7 +25,7 @@ def main(args):
     cfg = read_cfg(args[0])
     titles = [cfg.get('Histogram', 'File1'), cfg.get('Histogram', 'File2')]
     label = cfg.get('Histogram', 'Label')
-    print "Reading data..."
+    print("Reading data...")
     datas_f1_test = pandas.read_csv(args[1], delimiter=',', engine='c')
     if args[2] is None:
         datas_f2_test = None
@@ -34,8 +34,9 @@ def main(args):
     datas_f1_f2 = [datas_f1_test, datas_f2_test]
     histogram = Histogram(datas_f1_f2, args, titles, label)
     for test in datas_f1_test.columns.values:
-        print test
+        print(test)
         histogram.get_hitogram(test)
+
 
 if __name__ == '__main__':
     PARSER = argparse.ArgumentParser(description='Test Information')

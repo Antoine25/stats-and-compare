@@ -7,7 +7,7 @@ Last modification 2015/04/14
 
 @author: Antoine MARTIN
 """
-import ConfigParser
+from configparser import ConfigParser
 import time
 
 
@@ -42,7 +42,7 @@ def read_cfg(cfg_file):
     """
     Read test config file
     """
-    cfg = ConfigParser.ConfigParser()
+    cfg = ConfigParser()
     cfg.read(cfg_file)
     return cfg
 

@@ -90,7 +90,7 @@ class Histogram(object):
         f2 filtering test
         """
         self.test = test
-        print test
+        print(test)
         f2_data = self.datas_f2_test[
             test]
         f1_data = self.datas_f1_test[
@@ -116,8 +116,8 @@ class Histogram(object):
                         " = " + str(cpt_f2) + " " + unit + "\n")
             log.close()
         if self.blind is False:
-            print "     " + test + " " + self.titles[0] + \
-                " = " + str(cpt_f1) + " " + unit
+            print("     " + test + " " + self.titles[0] +
+                  " = " + str(cpt_f1) + " " + unit)
             if self.one_curve is False:
-                print "     " + test + " " + self.titles[1] + \
-                    " = " + str(cpt_f2) + " " + unit
+                print("     " + test + " " + self.titles[1] +
+                      " = " + str(cpt_f2) + " " + unit)
